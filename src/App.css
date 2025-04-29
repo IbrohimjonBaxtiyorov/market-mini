@@ -35,6 +35,7 @@
 
 .max-card {
     border-radius: 10px;
+
 }
 
 .add-button {
@@ -51,6 +52,55 @@
     margin-bottom: 100px;
     width: 100%;
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width:992px) {
+    #card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .max-card {
+        max-width: 320px;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+
+    .max-card {
+        max-width: 250px;
+    }
+
+    .card-img {
+        max-width: 250px;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+
+    #card-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .max-card {
+        max-width: 320px;
+    }
+
+    .card-img {
+        max-width: 320px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }
