@@ -1,0 +1,13 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: radial-gradient(#1F3757 ,#131537);
+  text-align: center;
+
+ 
+}
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+}
